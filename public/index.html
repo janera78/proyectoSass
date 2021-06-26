@@ -8,6 +8,65 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>Hola</h1>
+        <!--HEADER-->
+        <div class="contenedor">
+            <header>
+                 <!-- Banner -->
+                 <picture>
+                    <!-- Smartphone -->
+                    <source
+                        srcset="
+                            ../assets/img/smartphone/banner.jpg  1x,
+                            ../assets/img/smartphone/banner@2x.jpg 2x,
+                            ../assets/img/smartphone/banner@3x.jpg 3x
+                        "
+                        media="(min-width:320px) and (orientation: portrait)"
+                    />
+                    <!-- Desktop -->
+                    <source
+                        srcset="
+                            ../assets/img/desktop/banner.jpg  1x,
+                            ../assets/img/desktop/banner@2x.jpg 2x,
+                            "
+                        media="(min-width:1000px)"
+                    />
+                    <img class="banner" src="" alt="baner header" />
+                </picture>
+            
+                <!--menu Header Smartphone-->
+                <nav id="menu-smartphone">
+
+                    <input type="text">
+                    <label for="">
+                        <img src="./assets/img/svg/menu.svg" alt="icono menu">
+                    </label>
+                    <ul class="desplegable">
+                        <li></li>
+                        <li></li>
+
+                    </ul>
+                        <img src="./assets/img/svg/logoJM.svg" alt="logoJM">
+
+                </nav>
+                <!--menu Header Smartphone-->
+                <nav id="menu-desktop">
+                    <img src="./assets/img/svg/logoJM.svg" alt="logoJM">
+                    <a class="janera" href="#">JANERA</a>
+                    <a class="proyecto" href="#">PROYECTO</a>
+                    <a class="galeria" href="#">GALERÍA</a>
+    
+                
+                </nav>
+
+
+
+            </header>
+
+        </div>
+
+    <!--MAIN-->
+
+
+    <!--FOOTER-->
 </body>
 </html>
