@@ -365,6 +365,14 @@ template {
 /* ********* */
 /* @HEADER */
 /* ********* */
+#menu-smartphone input {
+  display: none;
+}
+
+#menu-desktop {
+  display: none;
+}
+
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */

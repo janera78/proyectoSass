@@ -1,3 +1,11 @@
 /* ********* */
 /* @MIXINS */
 /* ********* */
+// Font Face
+@mixin fontface($nombre, $archivo){
+
+    @font-face {
+        font-family: "#{$nombre}";
+        src: url("../assets/font/Montserrat-Regular.ttf") 
+    }
+}
