@@ -2,10 +2,11 @@
 /* @MIXINS */
 /* ********* */
 // Font Face
-@mixin fontface($nombre, $archivo){
+@mixin fontface($montserrat-regular, $archivo){
 
     @font-face {
-        font-family: "#{$nombre}";
-        src: url("../assets/font/Montserrat-Regular.ttf") 
+        font-family: "#{$montserrat-regular}";
+        src: url("./assets/font/montserrat-regular.woff2") format("woff2"),
+             url("./assets/font/montderrat-regular.woff") format("woff");
     }
 }
