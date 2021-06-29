@@ -384,34 +384,90 @@ html {
 /* ********* */
 /* @HEADER */
 /* ********* */
-#menu-smartphone input {
+#menu-smartphone {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "menu . logo";
+}
+#menu-smartphone input,
+#menu-smartphone .desplegable {
   display: none;
+}
+#menu-smartphone input:checked ~ .desplegable {
+  display: -ms-grid;
+  display: grid;
+  background-color: grey;
+  position: absolute;
+  margin: 0;
+  padding: 20%;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  justify-items: center;
+}
+#menu-smartphone .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: logo;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+#menu-smartphone .menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
 }
 
 #menu-desktop {
   display: none;
 }
 
+@media only screen and (min-width: 1440px) {
+  #menu-smartphone {
+    display: none;
+  }
+
+  #menu-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 300px;
+       -moz-column-gap: 300px;
+            column-gap: 300px;
+  }
+  #menu-desktop img {
+    margin: 0 1rem;
+  }
+}
 header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 50px;
-  grid-template-rows: 1fr 50px;
-      grid-template-areas: "banner" "menu";
+  -ms-grid-rows: [banner] auto [navegador] 50px [flecha] minmax(auto, 80px);
+  grid-template-rows: [banner] auto [navegador] 50px [flecha] minmax(auto, 80px);
+      grid-template-areas: "banner" "navegador" "flecha";
 }
-
-.banner_header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: banner;
+header .banner_header img {
+  width: 100%;
 }
-
-.menu-desktop {
-  -ms-grid-row: 2;
+header .flecha {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: menu;
+  grid-area: flecha;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* ********* */
@@ -427,6 +483,9 @@ footer {
   grid-row: 1fr;
   -ms-grid-column: 1;
   grid-column: 1fr;
+}
+footer .banner_footer img {
+  width: 100%;
 }
 
 .copyright {
@@ -476,6 +535,9 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+}
+main img .logo_fondo {
+  justify-items: center;
 }
 
 footer {

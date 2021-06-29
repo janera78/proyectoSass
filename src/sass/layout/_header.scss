@@ -1,13 +1,38 @@
 /* ********* */
 /* @HEADER */
 /* ********* */
+//MENU = navegador
 
 //smartphone
 
 #menu-smartphone {
-    input{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "menu . logo";
+    input,
+        .desplegable{
         display: none;
     }
+
+//CLIC
+input:checked ~ .desplegable{
+    display: grid;
+    background-color: grey;
+    position: absolute;
+    margin: 0;
+    padding: 20%;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    justify-items: center;
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+}
+.menu{
+    grid-area: menu;}
 }
 
 //Desktop
@@ -15,27 +40,48 @@
     display: none;
 }
 
+//MQ MEDIA QUERRY
+
 @media only screen and (min-width: 1440px) {
-    #menu-desktop {}
+
+    //Smartphone
+
+    #menu-smartphone {
+        display: none;
+    }
+    //Desktop
+    #menu-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 300px;
+        img{
+            margin: 0 1rem;
+        }
+    }
 }
+//HEADER
 
 header{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: [banner]auto [navegador]50px [flecha]minmax(auto, 80px);
     grid-template-areas:
         "banner"
-        "menu";
+        "navegador"
+        "flecha";
+        
+        // BANNER HEADER
+        .banner_header img{
+            width:100%;
+        }
+        .flecha{
+            grid-area: flecha;
+            justify-self: center;
+            align-self: center;
+        }
   }
-    .banner_header{
-        grid-area: banner;
-    }
-    .menu-desktop {
-        grid-area: menu;
-    }
 
 
-.menu {
-  
-  }
+
 

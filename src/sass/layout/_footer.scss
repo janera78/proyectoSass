@@ -6,6 +6,11 @@ footer{
     display: grid;
     grid-row: 1fr;
     grid-column: 1fr;
+
+    // BANNER FOOTER
+    .banner_footer img{
+    width:100%;
+            }
 }
 
 .copyright{

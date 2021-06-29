@@ -12,89 +12,97 @@
       <!--HEADER-->
         <div class="contenedor">
             <header>
-            <nav>
-                 <!-- Banner -->
-                 <picture class="banner_header">
-                    <!-- Smartphone -->
-                    <source
-                        srcset="
-                            ./assets/img/smartphone/banner.jpg  1x,
-                            ./assets/img/smartphone/banner@2x.jpg 2x,
-                            ./assets/img/smartphone/banner@3x.jpg 3x,
-                        "
-                        media="(min-width:320px) and (orientation: portrait)"
-                    />
-                    <!-- Desktop -->
-                    <source
-                        srcset="
-                            ./assets/img/desktop/headerAstrolabio.jpg  1x,
-                            ./assets/img/desktop/headerAstrolabio@2x.jpg 2x,
+                <nav>
+                    <!-- Banner -->
+                    <div class="banner_header">
+                    <picture>
+                        <!-- Smartphone -->
+                        <source
+                            srcset="
+                                ./assets/img/smartphone/banner.jpg  1x,
+                                ./assets/img/smartphone/banner@2x.jpg 2x,
+                                ./assets/img/smartphone/banner@3x.jpg 3x,
                             "
-                        media="(min-width:1000px)"
-                    />
-                    <img class="banner" src="" alt="baner header" />
-                </picture>
-            
-                <!--menu Header Smartphone-->
-                <section id="menu-smartphone">
-                    
-                        <!-- Menu desplegable clic - Smartphone/iPad -->
-                        <input type="checkbox" id="activar" />
-                        <label for="activar">
-                            <img clas="menu" src="./assets/img/svg/menu.svg" width="48px" />
-                        </label>
-                        <section class="desplegable">
-                            <a href="#">JANERA</a>
-                            <a href="#">PROYECTO</a>
-                            <a href="#">GALERÍA</a>
-                        </section>
-                        <!-- Fin del menu clic -->
-                    </header>
-
-                </section>
-
-                <!--menu Header Smartphone-->
-                <section id="menu-desktop">
-                    <img class="logoJM" src="./assets/img/svg/logoJM.svg" alt="logoJM">
-                    <a class="janera" href="#">JANERA</a>
-                    <a class="proyecto" href="#">PROYECTO</a>
-                    <a class="galeria" href="#">GALERÍA</a>
-    
+                            media="(min-width:320px) and (orientation: portrait)"
+                        />
+                        <!-- Desktop -->
+                        <source
+                            srcset="
+                                ./assets/img/desktop/headerAstrolabio.jpg  1x,
+                                ./assets/img/desktop/headerAstrolabio@2x.jpg 2x,
+                                "
+                            media="(min-width:1000px)"
+                        />
+                        <img class="banner" src="" alt="baner header" />
+                    </picture>
+                    </div>
                 
-                </section>
+                    <!--menu Header Smartphone-->
+                    <section id="menu-smartphone">
+                        <img class="logo" src="./assets/img/svg/logoJM.svg" alt="logo JM">
+                            <!-- Menu desplegable clic - Smartphone/iPad -->
+                            <input type="checkbox" id="clic" />
+                            <label for="clic">
+                                <img loading="lazy"
+                                    clas="menu" 
+                                    src="./assets/img/svg/menu.svg" 
+                                    alt="icono menu" 
+                                    />
+                            </label>
+                            <ul class="desplegable">
+                                <a href="janera.html">JANERA</a>
+                                <a href="proyecto.html">PROYECTO</a>
+                                <a href="galeria.html">GALERÍA</a>
+                            </ul>
+                            <!-- Fin del menu clic -->
+                    </section>
+                
+                    <!--menu Header DESKTOP-->
+                    <section id="menu-desktop">
+                        <img class="logoJM" src="./assets/img/svg/logoJM.svg" alt="logoJM">
+                        <a class="janera" href="#">JANERA</a>
+                        <a class="proyecto" href="#">PROYECTO</a>
+                        <a class="galeria" href="#">GALERÍA</a>
+                    </section>
                 </nav>
+                <!--LINK ANCLA-->
+                    <a class="flecha" href="#abajo">
+                    <img src="./assets/img/svg/flecha.svg" alt=""></a>
+
             </header>
             <!--MAIN-->
             <main>
-                <img class="logo fondo" src="./assets/img/svg/logoJMfondo.svg" alt="logo fondo">
+                <img class="logo_fondo" src="./assets/img/svg/logoJMfondo.svg" alt="logo JM">
                 
             </main>
 
 
             <!--FOOTER-->
             <footer>
-                <picture>
-                    <!-- Smartphone -->
-                    <source
-                        srcset="
-                            ./assets/img/smartphone/banner_footer.jpg  1x,
-                            ./assets/img/smartphone/banner_footer@2x.jpg 2x,
-                            ./assets/img/smartphone/banner_footer@3x.jpg 3x,
-                        "
-                        media="(min-width:320px) and (orientation: portrait)"
-                    />
-                    <!-- Desktop -->
-                    <source
-                        srcset="
-                            ./assets/img/desktop/footer.jpg  1x,
-                            ./assets/img/desktop/footer@2x.jpg 2x,
+                <div class="banner_footer">
+                    <picture>
+                        <!-- Smartphone -->
+                        <source
+                            srcset="
+                                ./assets/img/smartphone/banner_footer.jpg  1x,
+                                ./assets/img/smartphone/banner_footer@2x.jpg 2x,
+                                ./assets/img/smartphone/banner_footer@3x.jpg 3x,
                             "
-                        media="(min-width:1000px)"
-                    />
-                    <img class="banner" src="" alt="baner footer" />
-                    
-                </picture>   
-                <h6 class="copyright">&copy;Copyright 2021</h6>    
+                            media="(min-width:320px) and (orientation: portrait)"
+                        />
+                        <!-- Desktop -->
+                        <source
+                            srcset="
+                                ./assets/img/desktop/footer.jpg  1x,
+                                ./assets/img/desktop/footer@2x.jpg 2x,
+                                "
+                            media="(min-width:1000px)"
+                        />
+                        <img class="banner" src="" alt="baner footer" />
+                        
+                    </picture>   
+                    <h6 class="copyright">&copy;Copyright 2021</h6>
+                </div>        
             </footer>
 
         </div>   
