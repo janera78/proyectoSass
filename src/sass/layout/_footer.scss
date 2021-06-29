@@ -2,3 +2,16 @@
 /* @FOOTER */
 /* ********* */
 
+footer{
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr;
+}
+
+.copyright{
+    position:absolute;
+    margin: 10px;
+    color: white;
+    font-size: 14px;
+
+}

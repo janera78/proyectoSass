@@ -395,30 +395,23 @@ html {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 50px;
+  grid-template-rows: 1fr 50px;
+      grid-template-areas: "banner" "menu";
 }
 
-header > *:nth-child(1) {
+.banner_header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  grid-area: banner;
 }
 
-header > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-header > *:nth-child(3) {
+.menu-desktop {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-}
-
-header > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  grid-area: menu;
 }
 
 /* ********* */
@@ -427,6 +420,22 @@ header > *:nth-child(4) {
 /* ********* */
 /* @FOOTER */
 /* ********* */
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  grid-row: 1fr;
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+}
+
+.copyright {
+  position: absolute;
+  margin: 10px;
+  color: white;
+  font-size: 14px;
+}
+
 /* ********* */
 /* @FORMS */
 /* ********* */
