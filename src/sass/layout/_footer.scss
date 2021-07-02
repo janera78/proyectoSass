@@ -3,9 +3,7 @@
 /* ********* */
 
 footer{
-    display: grid;
-    grid-row: 1fr;
-    grid-column: 1fr;
+   
 
     // BANNER FOOTER
     .banner_footer img{
@@ -14,9 +12,8 @@ footer{
 }
 
 .copyright{
-    position:absolute;
+    position: absolute;
     margin: 10px;
-    color: white;
     font-size: 14px;
 
 }

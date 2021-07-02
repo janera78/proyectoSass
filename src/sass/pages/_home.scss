@@ -5,6 +5,7 @@ body{
     display: flex;
     justify-content: center;
     
+    
 }
 
 .contenedor{
@@ -18,14 +19,32 @@ body{
 }
 header{
     grid-area: header;
+    
 }
+
+//MAIN
 main{
-    grid-area: main;
-    img .logo_fondo{
-        justify-items: center;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    @media only screen and (min-width: 60rem){
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    }
+
+    h2, p, figcaption{
+        text-align: center;
+        text-align: justify;}
+    
+
+    figure{
+        width: 80%;
+        picture img {
+            width: 100%;
+            
+        }
+
     }
    
-}
-footer{
-    grid-area: footer;
-}
+

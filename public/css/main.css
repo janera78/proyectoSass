@@ -476,14 +476,6 @@ header .flecha {
 /* ********* */
 /* @FOOTER */
 /* ********* */
-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row: 1;
-  grid-row: 1fr;
-  -ms-grid-column: 1;
-  grid-column: 1fr;
-}
 footer .banner_footer img {
   width: 100%;
 }
@@ -491,7 +483,6 @@ footer .banner_footer img {
 .copyright {
   position: absolute;
   margin: 10px;
-  color: white;
   font-size: 14px;
 }
 
@@ -532,18 +523,37 @@ header {
 }
 
 main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
-main img .logo_fondo {
-  justify-items: center;
+@media only screen and (min-width: 60rem) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
+h2, p, figcaption {
+  text-align: center;
+  text-align: justify;
+}
+
+figure {
+  width: 80%;
+}
+figure picture img {
+  width: 100%;
 }
 
 /* ********* */

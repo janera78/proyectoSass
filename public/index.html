@@ -72,7 +72,36 @@
             </header>
             <!--MAIN-->
             <main>
-                <img class="logo_fondo" src="./assets/img/svg/logoJMfondo.svg" alt="logo JM">
+                <!-- <img class="logo_fondo" src="./assets/img/svg/logoJMfondo.svg" alt="logo JM"> -->
+            
+                <figure>
+                    <picture>
+                                                <!-- Smartphone -->
+                                                <source
+                                                srcset="
+                                                    ./assets/img/smartphone/llaveroAstrolabio.jpg  1x,
+                                                    ./assets/img/smartphone/llaveroAstrolabio@2x.jpg 2x,
+                                                    ./assets/img/smartphone/llaveroAstrolabio@3x.jpg 3x,
+                                                "
+                                                media="(min-width:320px) and (orientation: portrait)"
+                                            />
+                                            <!-- Desktop -->
+                                            <source
+                                                srcset="
+                                                    ./assets/img/desktop/llaveroAstrolabio.jpg  1x,
+                                                    ./assets/img/desktop/llaveroAstrolabio@2x.jpg 2x,
+                                                    "
+                                                    media="(min-width:1000px)"
+                                            />
+                                            <img class="llavero_astrolabio" src="" alt="llavero astrolabio" />
+                    </picture>
+                    <figcaption>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus ullamcorper amet, at. At morbi fames etiam lobortis natoque morbi in et. Eu ultrices mauris diam congue id. Sit nisl bibendum ullamcorper enim viverra. Est velit hendrerit tortor lectus enim feugiat egestas dolor.
+                    </figcaption>
+                    <h2>SOBRE MÍ</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lectus ullamcorper amet, at. At morbi fames etiam lobortis natoque morbi in et. Eu ultrices mauris diam congue id. Sit nisl bibendum ullamcorper enim viverra. Est velit hendrerit tortor lectus enim feugiat egestas dolor.</p>
+                </figure>
+
                 
             </main>
 
