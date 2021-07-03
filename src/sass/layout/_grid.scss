@@ -1,3 +1,47 @@
 /* ********* */
 /* @GRID*/
 /* ********* */
+/*GRID DE MAIN*/
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: [foto]auto [texto]auto [formulario]auto;
+
+
+
+        /*esto es subgrid de foto con texto*/
+        figure{
+           
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: [foto]auto [texto]auto [formulario]auto;
+        }
+            /*foto*/
+                picture{
+                    grid-column: 1/2;
+
+                }
+            /*texto*/
+                figcaption{
+                    grid-column: 2/3;
+                }
+
+        /*esto es subgrid del formulario*/
+        div{
+            grid-column: 3/4;
+        }
+
+        .formulario{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4 auto);
+
+        }
+        .contactar{
+            grid-row: 1/2;
+        }
+        .formulario{
+            grid-row: 2/2;
+        }
+
+}
