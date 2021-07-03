@@ -24,6 +24,12 @@ header{
 
 //MAIN
 main{
+     //logo de fondo
+    background: url("./assets/img/svg/logoJMfondo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
     width: 100%;
     display: flex;
     flex-flow: column nowrap;

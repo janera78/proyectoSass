@@ -489,6 +489,11 @@ footer .banner_footer img {
 /* ********* */
 /* @FORMS */
 /* ********* */
+.btn {
+  background-color: #736F69;
+  color: white;
+}
+
 /* ********* */
 /* @GRID*/
 /* ********* */
@@ -523,6 +528,10 @@ header {
 }
 
 main {
+  background: url("./assets/img/svg/logoJMfondo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

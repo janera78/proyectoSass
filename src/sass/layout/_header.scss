@@ -65,6 +65,7 @@ input:checked ~ .desplegable{
 //HEADER
 
 header{
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: [banner]auto [navegador]50px [flecha]minmax(auto, 80px);
